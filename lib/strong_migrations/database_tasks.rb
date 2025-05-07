@@ -1,7 +1,7 @@
 module StrongMigrations
   module DatabaseTasks
-    # Active Record 7 adds version argument
-    def migrate(*args)
+    # Active Record 8 adds version argument
+    def migrate(...)
       super
     rescue => e
       if e.cause.is_a?(StrongMigrations::Error)
